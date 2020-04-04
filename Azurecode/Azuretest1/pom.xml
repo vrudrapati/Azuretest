@@ -167,6 +167,31 @@
 			<artifactId>testlink-java-api</artifactId>
 			<version>1.9.8-1</version>
 		</dependency>
-
 	</dependencies>
-</project>
+   <repositories>
+    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
+      <repository>
+         <id>dev.azure.com-mseng-zcalvinmaven</id>
+         <url>https://dev.azure.com/mseng/_packaging/zCalvinMaven2/maven/v1</url>
+         <releases>
+            <enabled>true</enabled>
+         </releases>
+         <snapshots>
+            <enabled>true</enabled>
+         </snapshots>
+      </repository>
+   </repositories>
+   <distributionManagement>
+    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
+      <repository>
+         <id>dev.azure.com-mseng-zcalvinmaven</id>
+         <url>https://dev.azure.com/mseng/_packaging/zCalvinMaven2/maven/v1</url>
+         <releases>
+            <enabled>true</enabled>
+         </releases>
+         <snapshots>
+            <enabled>true</enabled>
+         </snapshots>
+      </repository>
+   </distributionManagement>
+  </project>
